@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Задание 1
+        // Задание 1.
 
         int clientOS = 0;
 
@@ -12,7 +12,7 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
-        // Задание 2
+        // Задание 2.
 
         int clientDeviceYear = 2014;
         int clientOS1 = 0;
@@ -23,7 +23,7 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
 
-        // Задание 3
+        // Задание 3.
 
         int year = 2020;
 
@@ -35,7 +35,7 @@ public class Main {
             System.out.println("Год не является високосным");
         }
 
-        // Задание 4
+        // Задание 4.
 
         int deliveryDistance = 44;
         if (deliveryDistance <= 20) {
@@ -46,7 +46,7 @@ public class Main {
             System.out.println("Потребуется дней: 3");
         }
 
-        // Задание 5
+        // Задание 5.
 
         int monthNumber = 9;
         switch (monthNumber) {
