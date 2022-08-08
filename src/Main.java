@@ -14,30 +14,34 @@ public class Main {
 
         // Задание 2.
 
-        int clientDeviceYear = 2014;
-        int clientOS1 = 0;
+        int clientDeviceYear = 2022;
+        int clientOS1 = 1;
 
         if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOS == 0 && clientDeviceYear < 2015) {
+        } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+        if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для iOS по ссылке");
         }
 
         // Задание 3.
 
         int year = 2020;
 
-        if (year % 400 == 0) {
+        if (year % 400 == 0 || year % 100 != 0 && year % 4 == 0) {
             System.out.println("Год является високосным");
-        } else if (year % 100 != 0 && year % 4 == 0) {
-            System.out.println("Год является високосным");
-        } else {
+        }  else {
             System.out.println("Год не является високосным");
         }
 
         // Задание 4.
 
         int deliveryDistance = 44;
+
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: 1");
         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
@@ -46,7 +50,7 @@ public class Main {
             System.out.println("Потребуется дней: 3");
         }
 
-        // я в упор не понимаю как сделать так, чтобы код работал при каждом условном расширении расстояния на 20 км :С
+
 
         // Задание 5
 
