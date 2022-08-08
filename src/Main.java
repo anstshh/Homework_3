@@ -79,6 +79,29 @@ public class Main {
             default:
                 System.out.println("Такого сезона нет");
         }
+
+        // Задание 6
+
+        int age = 19;
+        int salary = 58_000;
+        double limit;
+
+        if (age >= 23) {
+            System.out.println(limit = salary * 3);
+        } else {
+            System.out.println(limit = salary * 2);
+        }
+
+        if (salary >= 50_000) {limit *= 1.2;
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + limit + " рублей");
+        }
+        if (salary >= 80_000) {limit *= 1.5;
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + limit + "рублей" );
+        }
+
+        // Задание 7
+
+
     }
 }
 
