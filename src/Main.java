@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Задание 1
+        // Задание 1.
 
         int clientOS = 0;
 
@@ -12,32 +12,36 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
-        // Задание 2
+        // Задание 2.
 
-        int clientDeviceYear = 2014;
-        int clientOS1 = 0;
+        int clientDeviceYear = 2022;
+        int clientOS1 = 1;
 
         if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOS == 0 && clientDeviceYear < 2015) {
+        } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+        if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для iOS по ссылке");
         }
 
-        // Задание 3
+        // Задание 3.
 
         int year = 2020;
 
-        if (year % 400 == 0) {
+        if (year % 400 == 0 || year % 100 != 0 && year % 4 == 0) {
             System.out.println("Год является високосным");
-        } else if (year % 100 != 0 && year % 4 == 0) {
-            System.out.println("Год является високосным");
-        } else {
+        }  else {
             System.out.println("Год не является високосным");
         }
 
-        // Задание 4
+        // Задание 4.
 
         int deliveryDistance = 44;
+
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: 1");
         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
@@ -45,6 +49,8 @@ public class Main {
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
             System.out.println("Потребуется дней: 3");
         }
+
+
 
         // Задание 5
 
@@ -73,6 +79,29 @@ public class Main {
             default:
                 System.out.println("Такого сезона нет");
         }
+
+        // Задание 6
+
+        int age = 19;
+        int salary = 58_000;
+        double limit;
+
+        if (age >= 23) {
+            System.out.println(limit = salary * 3);
+        } else {
+            System.out.println(limit = salary * 2);
+        }
+
+        if (salary >= 50_000) {limit *= 1.2;
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + limit + " рублей");
+        }
+        if (salary >= 80_000) {limit *= 1.5;
+            System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + limit + "рублей" );
+        }
+
+        // Задание 7
+
+
     }
 }
 
